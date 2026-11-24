@@ -3,7 +3,7 @@ name: Ingest Gempa
 on:
   schedule:
     # UTC. 00,06,12,18 UTC = 07,13,19,01 WIB (tiap 6 jam).
-    - cron: "0 */10 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch: {}
 
 permissions:
