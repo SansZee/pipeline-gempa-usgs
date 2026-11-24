@@ -45,3 +45,5 @@ logs/usgs-gempa/dt=YYYY-MM-DD/run-<run_id>.json
 
 Setiap run menulis partisi sendiri, jadi data lama tidak tertimpa. `id` gempa
 dipakai untuk dedupe saat query lintas partisi.
+
+flag flag
