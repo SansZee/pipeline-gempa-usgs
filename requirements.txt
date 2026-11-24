@@ -1,0 +1,5 @@
+requests>=2.32
+pandas>=2.2
+pyarrow>=18
+azure-storage-blob>=12.24
+pytest>=8.2
