@@ -35,7 +35,11 @@ def clean(df: pd.DataFrame) -> pd.DataFrame:
     """Buang baris tanpa id/magnitude/waktu, koordinat mustahil, dan duplikat."""
     df = df.dropna(subset=["id", "magnitude", "time_utc"])
     df = df[df["latitude"].between(-90, 90) & df["longitude"].between(-180, 180)]
+<<<<<<< HEAD
     df = df.sort_values("time_utc", ascending=False)
+=======
+    df = df.drop_duplicates(subset="id").sort_values("time_utc", ascending=False) 
+>>>>>>> main
     return df.reset_index(drop=True)
 
 
